@@ -1,0 +1,18 @@
+github code and Dockerfile repo= https://github.com/zahidaws/amazon.git
+
+in aws instance amzaon linux2 t2.micro
+install jenkins and docker
+creaded a Dockerfile in docker 
+==pull website code from github
+ git clone https://github.com/zahidaws/amazon.git
+
+== intigrete docker to jenkins
+
+ chmod 777 /var/run/docker.sock
+ systemctl daemon-reload
+ systemctl restart docker.service
+
+== in jenkins write scripts in pipeline to build and run docker
+ jenkins scrips 
+
+== expose port 5000
